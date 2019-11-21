@@ -1,0 +1,137 @@
+{
+    "agency": {
+        "mrn": "urn:mrn:mission:exampleAgency",
+        "name": "Example Agency",
+        "contactUrl": "https://www.exampleAgency.com",
+        "fareUrl": "https://www.booking.exampleAgency.com",
+        "timeZone": "GMT",
+        "businessLanguages": ["DE"],
+        "phoneNumber": "+4917656916450",
+        "contactMail": "info@example.agency.com"
+    },
+    "routes": [
+    	{
+	        "id": "Route_VR_MUC",
+	        "name": "Route von Verona nach Muenchen",
+	        "type": "RAIL",
+	        "trips": [
+	            {
+	                "id": "Trip_VR_PR",
+	                "name": "Trip von Verona nach Paris",
+	                "startValidDate": "2019-01-01",
+	                "endValidDate": "2021-01-01",
+	                "distance": 1062.0,
+	                "meansTransport": {
+	                    "emission": 22.5,
+	                    "type": "TRAIN"
+	                },
+	                "price": {
+	                    "currency":"EUR",
+	                    "value":200.5
+	                },
+	                "calendar": {
+	                	"friday": true,
+	                    "monday": true,
+	                    "saturday": false,
+	                    "sunday": true,
+	                    "thursday": false,
+	                    "tuesday": true,
+	                    "wednesday": false
+	                },
+	                "tripExceptions": ["2019-12-24", "2019-12-23"],
+	                "stoptimes": [
+	                    {
+	                        "sequence": 1,
+	                        "id": "Depart_Trip_VR_PR",
+	                        "departureTime": "15:00:00",
+	                        "stop": {
+	                            "id": {
+	                            	"uicCode": "8302433"
+	                            },
+	                            "name": "Verona Porta Vescovo",
+	                            "latitude": 45.438618,
+	                            "longitude": 10.993313,
+	                            "timeZone": "Europe/Berlin"
+	                        }
+	                    },
+	                    {
+	                        "sequence": 2,
+	                        "id": "Arriv_Trip_VR_PR",
+	                        "arrivalTime": "02:55:00",
+	                        "stop": {
+	                            "id": {
+	                            	"uicCode": "8768600"
+	                            },
+	                            "name": "Paris Gare de Lyon",
+	                            "latitude": 48.856613,
+	                            "longitude": 2.352222,
+	                            "timeZone": "Europe/Berlin"
+	                        }
+	                    }
+	                ]
+	            },
+	            {
+	                "id": "Trip_PR_MUC",
+	                "name": "Trip von Paris nach Muenchen",
+	                "startValidDate": "2019-01-01",
+	                "endValidDate": "2021-01-01",
+	                "distance": 920.5,
+	                "meansTransport": {
+	                    "emission": 22.5,
+	                    "type": "TRAIN"
+	                },
+	                "price": {
+	                    "currency":"EUR",
+	                    "value":150.0
+	                },
+	                "calendar": {
+	                	"friday": false,
+	                    "monday": false,
+	                    "saturday": true,
+	                    "sunday": false,
+	                    "thursday": true,
+	                    "tuesday": false,
+	                    "wednesday": true
+	                },
+	                "tripExceptions": ["2019-12-24", "2019-12-23"],
+	                "stoptimes": [
+	                    {
+	                        "sequence": 1,
+	                        "id": "Depart_Trip_PR_MUC",
+	                        "departureTime": "12:00:00",
+	                        "stop": {
+	                            "id": {
+	                            	"uicCode": "8727102"
+	                            },
+	                            "name": "Paris Gare du Nord",
+	                            "latitude": 48.9,
+	                            "longitude": 2.37,
+	                            "timeZone": "Europe/Berlin"
+	                        }
+	                    },
+	                    {
+	                        "sequence": 2,
+	                        "id": "Arriv_Trip_PR_MUC",
+	                        "arrivalTime": "22:10:00",
+	                        "stop": {
+	                            "id": {
+	                            	"uicCode": "8020349"
+	                            },
+	                            "name": "Muenchen Hbf",
+	                            "latitude": 48.135124,
+	                            "longitude": 11.581981,
+	                            "timeZone": "Europe/Berlin"
+	                        }
+	                    }
+	                ]
+	            }
+	        ]
+	    }
+	],
+    "transfers": [
+        {
+            "origin": "8768600",
+            "destination": "8727102"
+        }
+    ]
+}

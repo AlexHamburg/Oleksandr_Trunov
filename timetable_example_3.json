@@ -1,0 +1,136 @@
+{
+    "agency": {
+        "mrn": "urn:mrn:mission:exampleAgency3",
+        "name": "Example Agency 3",
+        "contactUrl": "https://www.exampleAgency3.com",
+        "fareUrl": "https://www.booking.exampleAgency3.com",
+        "timeZone": "Europe/Berlin",
+        "businessLanguages": ["DE", "RU", "EN"],
+        "phoneNumber": "+4917656916453",
+        "contactMail": "info@example.agency3.com"
+    },
+    "routes": [
+    	{
+	        "id": "Route_LUEB_BR",
+	        "name": "Route von Luebeck nach Berlin",
+	        "type": "RAIL",
+	        "trips": [
+	            {
+	                "id": "Trip_LUEB_BR",
+	                "name": "Trip von Luebeck nach Berlin",
+	                "startValidDate": "2019-01-25",
+	                "endValidDate": "2021-01-01",
+	                "distance": 290.0,
+	                "meansTransport": {
+	                    "emission": 21.5,
+	                    "type": "TRAIN"
+	                },
+	                "calendar": {
+	                	"friday": true,
+	                    "monday": true,
+	                    "saturday": true,
+	                    "sunday": true,
+	                    "thursday": false,
+	                    "tuesday": true,
+	                    "wednesday": false
+	                },
+	                "tripExceptions": ["2019-12-24", "2019-12-23"],
+	                "stoptimes": [
+	                    {
+	                        "sequence": 1,
+	                        "id": "Depart_Trip_LUEB_BR",
+	                        "departureTime": "19:30:00",
+	                        "stop": {
+	                        	"id": {
+	                            	"uicCode": "8001631"
+	                            },
+	                            "name": "Luebeck Hbf",
+	                            "latitude": 53.865467,
+	                            "longitude": 10.686559,
+	                            "timeZone": "Europe/Berlin"
+	                        }
+	                    },
+	                    {
+	                        "sequence": 2,
+	                        "id": "Arriv_Trip_LUEB_BR",
+	                        "arrivalTime": "22:10:00",
+	                        "stop": {
+	                        	"id": {
+	                            	"uicCode": "8033452"
+	                            },
+	                            "name": "Berlin Hbf",
+	                            "latitude": 52.5201,
+	                            "longitude": 13.405,
+	                            "timeZone": "Europe/Berlin"
+	                        }
+	                    }
+	                ]
+	            }
+	        ]
+	    },
+	    {
+	        "id": "Route_BR_DR",
+	        "name": "Route von Berlin nach Dresden",
+	        "type": "RAIL",
+	        "trips": [
+	            {
+	                "id": "Trip_BR_DR",
+	                "name": "Trip von Berlin nach Dresden",
+	                "startValidDate": "2019-01-25",
+	                "endValidDate": "2021-01-01",
+	                "distance": 200.0,
+	                "meansTransport": {
+	                    "emission": 20.0,
+	                    "type": "TRAIN"
+	                },
+	                "calendar": {
+	                	"friday": true,
+	                    "monday": true,
+	                    "saturday": false,
+	                    "sunday": true,
+	                    "thursday": true,
+	                    "tuesday": true,
+	                    "wednesday": false
+	                },
+	                "tripExceptions": ["2019-12-24", "2019-12-23"],
+	                "stoptimes": [
+	                    {
+	                        "sequence": 1,
+	                        "id": "Depart_Trip_BR_DR",
+	                        "departureTime": "10:30:00",
+	                        "stop": {
+	                        	"id": {
+	                            	"uicCode": "8003365"
+	                            },
+	                            "name": "Berlin-Adlershof",
+	                            "latitude": 52.6,
+	                            "longitude": 13.3,
+	                            "timeZone": "Europe/Berlin"
+	                        }
+	                    },
+	                    {
+	                        "sequence": 2,
+	                        "id": "Arriv_Trip_BR_DR",
+	                        "arrivalTime": "14:00:00",
+	                        "stop": {
+	                        	"id": {
+	                            	"uicCode": "8006050"
+	                            },
+	                            "name": "Dresden Hbf",
+	                            "latitude": 51.050407,
+	                            "longitude": 13.737262,
+	                            "timeZone": "Europe/Berlin"
+	                        }
+	                    }
+	                ]
+	            }
+	        ]
+	    }
+	],
+	"transfers": [
+        {
+            "origin": "8033452",
+            "destination": "8003365"
+        }
+    ]
+}

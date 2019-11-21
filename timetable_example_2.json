@@ -1,0 +1,136 @@
+{
+    "agency": {
+        "mrn": "urn:mrn:mission:exampleAgency2",
+        "name": "Example Agency 2",
+        "contactUrl": "https://www.exampleAgency2.com",
+        "fareUrl": "https://www.booking.exampleAgency2.com",
+        "timeZone": "Europe/Berlin",
+        "businessLanguages": ["DE", "RU"],
+        "phoneNumber": "+4917656916451",
+        "contactMail": "info@example.agency2.com"
+    },
+    "routes": [
+    	{
+	        "id": "Route_MUC_HH",
+	        "name": "Route von Muenchen nach Hamburg",
+	        "type": "RAIL",
+	        "trips": [
+	            {
+	                "id": "Trip_MUC_HH",
+	                "name": "Trip von Muenchen nach Hamburg",
+	                "startValidDate": "2019-01-25",
+	                "endValidDate": "2021-01-01",
+	                "distance": 779.0,
+	                "meansTransport": {
+	                    "emission": 25.5,
+	                    "type": "TRAIN"
+	                },
+	                "calendar": {
+	                	"friday": true,
+	                    "monday": true,
+	                    "saturday": true,
+	                    "sunday": true,
+	                    "thursday": false,
+	                    "tuesday": true,
+	                    "wednesday": false
+	                },
+	                "tripExceptions": ["2019-12-24", "2019-12-23"],
+	                "stoptimes": [
+	                    {
+	                        "sequence": 1,
+	                        "id": "Depart_Trip_MUC_HH",
+	                        "departureTime": "10:30:00",
+	                        "stop": {
+	                        	"id": {
+	                            	"uicCode": "8020349"
+	                            },
+	                            "name": "Muenchen Hbf",
+	                            "latitude": 48.135124,
+	                            "longitude": 11.581981,
+	                            "timeZone": "Europe/Berlin"
+	                        }
+	                    },
+	                    {
+	                        "sequence": 2,
+	                        "id": "Arriv_Trip_MUC_HH",
+	                        "arrivalTime": "15:50:00",
+	                        "stop": {
+	                        	"id": {
+	                            	"uicCode": "8001020"
+	                            },
+	                            "name": "Hamburg Hbf",
+	                            "latitude": 53.552302,
+	                            "longitude": 10.006945,
+	                            "timeZone": "Europe/Berlin"
+	                        }
+	                    }
+	                ]
+	            }
+	        ]
+	    },
+	    {
+	        "id": "Route_HH_LUEB",
+	        "name": "Route von Muenchen nach Luebeck",
+	        "type": "RAIL",
+	        "trips": [
+	            {
+	                "id": "Trip_HH_LUEB",
+	                "name": "Trip von Muenchen nach Luebeck",
+	                "startValidDate": "2019-01-25",
+	                "endValidDate": "2021-01-01",
+	                "distance": 79.0,
+	                "meansTransport": {
+	                    "emission": 22.5,
+	                    "type": "TRAIN"
+	                },
+	                "calendar": {
+	                	"friday": true,
+	                    "monday": true,
+	                    "saturday": true,
+	                    "sunday": true,
+	                    "thursday": true,
+	                    "tuesday": true,
+	                    "wednesday": false
+	                },
+	                "tripExceptions": ["2019-12-24", "2019-12-23"],
+	                "stoptimes": [
+	                    {
+	                        "sequence": 1,
+	                        "id": "Depart_Trip_HH_LUEB",
+	                        "departureTime": "16:30:00",
+	                        "stop": {
+	                        	"id": {
+	                            	"uicCode": "8001089"
+	                            },
+	                            "name": "Hamburg Damtor",
+	                            "latitude": 53.57,
+	                            "longitude": 10.01,
+	                            "timeZone": "Europe/Berlin"
+	                        }
+	                    },
+	                    {
+	                        "sequence": 2,
+	                        "id": "Arriv_Trip_HH_LUEB",
+	                        "arrivalTime": "18:00:00",
+	                        "stop": {
+	                        	"id": {
+	                            	"uicCode": "8001631"
+	                            },
+	                            "name": "Luebeck Hbf",
+	                            "latitude": 53.865467,
+	                            "longitude": 10.686559,
+	                            "timeZone": "Europe/Berlin"
+	                        }
+	                    }
+	                ]
+	            }
+	        ]
+	    }
+	],
+	"transfers": [
+        {
+            "origin": "8001020",
+            "destination": "8001089"
+        }
+    ]
+}
