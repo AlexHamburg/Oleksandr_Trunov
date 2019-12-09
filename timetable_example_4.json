@@ -20,7 +20,8 @@
 	                "name": "Trip von Verona nach Paris",
 	                "startValidDate": "2019-01-01",
 	                "endValidDate": "2021-01-01",
-	                "distance": 1045.0,
+                    "distance": 1045.0,
+                    "duration": 715,
 	                "meansTransport": {
 	                    "emission": 21.5,
 	                    "type": "TRAIN"
@@ -75,7 +76,8 @@
 	                "name": "Trip von Paris nach Muenchen",
 	                "startValidDate": "2019-01-01",
 	                "endValidDate": "2021-01-01",
-	                "distance": 915.5,
+                    "distance": 915.5,
+                    "duration": 610,
 	                "meansTransport": {
 	                    "emission": 20.5,
 	                    "type": "TRAIN"
@@ -130,8 +132,16 @@
 	],
     "transfers": [
         {
-            "origin": "8768600",
-            "destination": "8727102"
+            "origin": {
+                "id": {
+                    "uicCode": "8768600"
+                }
+            },
+            "destination": {
+                "id": {
+                    "uicCode": "8727102"
+                }
+            }
         }
     ]
 }

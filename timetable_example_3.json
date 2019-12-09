@@ -20,7 +20,8 @@
 	                "name": "Trip von Luebeck nach Berlin",
 	                "startValidDate": "2019-01-25",
 	                "endValidDate": "2021-01-01",
-	                "distance": 290.0,
+                    "distance": 290.0,
+                    "duration": 160,
 	                "meansTransport": {
 	                    "emission": 21.5,
 	                    "type": "TRAIN"
@@ -78,7 +79,8 @@
 	                "name": "Trip von Berlin nach Dresden",
 	                "startValidDate": "2019-01-25",
 	                "endValidDate": "2021-01-01",
-	                "distance": 200.0,
+                    "distance": 200.0,
+                    "duration": 210,
 	                "meansTransport": {
 	                    "emission": 20.0,
 	                    "type": "TRAIN"
@@ -127,10 +129,18 @@
 	        ]
 	    }
 	],
-	"transfers": [
+    "transfers": [
         {
-            "origin": "8033452",
-            "destination": "8003365"
+            "origin": {
+                "id": {
+                    "uicCode": "8033452"
+                }
+            },
+            "destination": {
+                "id": {
+                    "uicCode": "8003365"
+                }
+            }
         }
     ]
 }
