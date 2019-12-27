@@ -1,0 +1,5 @@
+Departure;Arrival;Closing day;Closing time;Pick-up day;Pick-up time;Lead Time ;Profile;Comment;Partner(s);Route Type;Transport Type
+Ludwigshafen;Barcelona;Monday;20:00;Wednesday;07:00;A-C;C45/C364;;Kombi;RAIL;TRAIN
+Ludwigshafen;Barcelona;Tuesday;20:00;Thursday;07:00;A-C;C45/C364;;Kombi;RAIL;TRAIN
+Ludwigshafen;Barcelona;Wednesday;20:00;Friday;07:00;A-C;C45/C364;;Kombi;RAIL;TRAIN
+Ludwigshafen;Barcelona;Friday;20:00;Monday;07:00;A-D;C45/C364;;Kombi;RAIL;TRAIN

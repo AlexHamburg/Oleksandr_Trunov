@@ -1,0 +1,20 @@
+{
+    "departureHeader": "departure",
+    "arrivalHeader": "arrival",
+    "departureDayHeader": "closing day",
+    "departureTimeHeader": "closing time",
+    "arrivalDayHeader": "pick-up day",
+    "arrivalTimeHeader": "pick-up time",
+    "transportTimeHeader": "lead time",
+    "partnerHeader": "partner(s)",
+    "routeTypeHeader": "route type",
+    "transportTypeHeader": "transport type",
+    "delimiter": ";",
+    "agencyMrn": "urn:mrn:mission:ecl",
+    "agencyName": "ECL",
+    "contactUrl": "http://info.ecl.org",
+    "timeZone": "Europe/Berlin",
+    "businessLanguages": ["DE", "EN"],
+    "phoneNumber": "0675823009",
+    "contactMail": "info@ecl.org"
+}
